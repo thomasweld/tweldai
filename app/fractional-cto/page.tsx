@@ -12,7 +12,7 @@ import {
 
 export const metadata = {
   title: "Fractional CTO & Technical Advisor | Thomas Weld",
-  description: "Senior engineering leadership without the full-time cost. Get a seasoned CTO on your team for decisions, direction, and execution.",
+  description: "Senior engineering leadership without the full-time cost. Get a seasoned technologist on your team for decisions, direction, and execution.",
 };
 
 const ctoFeatures = [
@@ -75,7 +75,7 @@ export default function FractionalCtoPage() {
             without the full-time cost.
           </>
         }
-        subheadline="Get a seasoned CTO on your team for the decisions, direction, and execution your startup needs right now."
+        subheadline="Get a seasoned technologist on your team for the decisions, direction, and execution your startup needs right now."
       />
       
       <LogoBar label="Experience from" />
