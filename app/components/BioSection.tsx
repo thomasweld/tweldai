@@ -19,15 +19,21 @@ export function BioSection() {
             
             {/* Image Column */}
             <div className="lg:col-span-5 lg:-mt-8 xl:col-span-4 relative flex items-center justify-center">
-              <div className="w-full relative aspect-[3/4] max-w-md rounded-2xl bg-neutral-900 overflow-hidden shadow-2xl ring-1 ring-white/10 glass-panel">
-                {/* 
-                  Note: Using a placeholder divine gradient instead of a generic portrait
-                  until the user uploads their actual headshot.
-                */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 via-neutral-800 to-purple-600 opacity-60 mix-blend-screen" />
-                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-neutral-950 to-transparent">
-                  <p className="text-xl font-bold text-white tracking-tight">Thomas Weld</p>
-                  <p className="text-sm font-medium text-neutral-300">Fractional CTO</p>
+              {/* Gradient border ring */}
+              <div className="w-full max-w-md p-[10px] rounded-2xl bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-400 shadow-2xl shadow-blue-500/20">
+                <div className="w-full relative aspect-[3/4] max-w-md rounded-2xl bg-neutral-900 overflow-hidden">
+                  <Image
+                    src="/thomas-weld-tech-ai-consultant-profile-pic-portrait.jpg"
+                    alt="Thomas Weld"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  {/* Subtle gradient overlay at bottom */}
+                  <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-neutral-950/80 to-transparent">
+                    <p className="text-xl font-bold text-white tracking-tight">Thomas Weld</p>
+                    <p className="text-sm font-medium text-neutral-300">Fractional CTO</p>
+                  </div>
                 </div>
               </div>
             </div>
